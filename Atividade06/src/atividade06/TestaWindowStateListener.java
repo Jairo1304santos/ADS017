@@ -5,16 +5,15 @@ import java.awt.event.WindowFocusListener;
 import javax.swing.JFrame;
 
 
-public class TestaWindowFocusListener {
+public class TestaWindowStateListener {
     public static void main(String[] args) {
-        OuvinteWindowFocusListener ouvinte = new OuvinteWindowFocusListener();
-        
+        OuvinteWindowStateListener ouvinte = new OuvinteWindowStateListener();
         JFrame janela = new JFrame();
-        janela.addWindowFocusListener(ouvinte);
+        janela.addWindowStateListener(ouvinte);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        janela.setSize(500, 400);
+        janela.setSize(500, 300);
         janela.setVisible(true);
-       
+        
     }
     
 }
